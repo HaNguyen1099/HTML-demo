@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url("./background.jpg");
+    font-family: "Pacifico", sans-serif;
+}
+
+/* bảng menu */
+
+header { 
+    position: absolute;
+    width: 100%;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 160px;
+    width: 100%;
+    /* background-color: black;
+    opacity: 0.8;
+    filter: alpha(opacity=80); */
+    background: transparent;
+    background-image: linear-gradient(180deg, rgb(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.menu .navbar {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    margin-top: -30px;
+}
+
+.menu .navbar .navbar__logo {
+    display: flex;
+    align-items: center;
+}
+
+.menu .navbar .navbar__logo img {
+    height: 54px;
+    width: 54px;
+    object-fit: cover;
+}
+
+.menu .navbar .navbar__logo p {
+    color: white;
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: 750;
+    font-family: sans-serif;
+}
+
+.menu .navbar .navbar__links {
+    display: flex; 
+    align-items: center;
+    margin-right: 60px;
+}
+
+.navbar__links li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+.navbar__links li a {
+    position: relative;
+    text-decoration: none;
+    color:aliceblue;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.navbar__links li a:hover {
+    color:green;
+}
+
+.navbar__links .drop {
+    background-color: #F7C04A;
+    color: black;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    border-radius: 7px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    margin-left: 20px;
+    cursor: pointer; /* tạo ra hình bàn tay khi chỉ đến hộp thoại */
+}
+
+/* Dùng trong <div> để định vị nội dung thả xuống */
+.navbar__links .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Nội dung thả xuống (Ẩn theo mặc định) */
+.navbar__links .drop-content {
+    display: none; /* sẽ ẩn các hộp thoại xuống */
+    position: absolute;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Liên kết bên trong danh sách thả xuống */
+.navbar__links .drop-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-family: sans-serif;
+    display: block;
+}
+
+/* Thay đổi định dạng của liên kết thả xuống khi di chuột qua */
+.navbar__links .drop-content a:hover {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+/* Hiển thị menu thả xuống khi di chuột */
+.navbar__links .dropdown:hover .drop-content {
+    display: block;
+}
+
+/* Thay đổi màu nền của nút thả xuống khi nội dung được hiển thị */
+.navbar__links .dropdown:hover .drop {
+    background-color:darkorange;
+}
+
+/* phần main */
+
+.content {
+    margin-top: 10%;
+    margin-left: 32%;
+    width: 100%;
+}
+
+.content .main h1 {
+    color: #F7C04A; 
+    font-weight: 700;
+    font-size: 120px;
+}
+
+.content .intro p {
+    color: white;
+    margin-left: 135px;
+    font-size: 30px;
+    font-weight:400;
+    font-family: sans-serif;
+}
+
+.content .call button {
+    color: white;
+    border: none;
+    background: #F7C04A;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    border-radius: 30px;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 120px;
+    margin-top: 150px;
+    cursor: pointer;
+}
+
+.content .call button:hover {
+    color:green;
+}
+
+
