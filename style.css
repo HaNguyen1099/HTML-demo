@@ -55,12 +55,17 @@ header {
     object-fit: cover;
 }
 
-.menu .navbar .navbar__logo p {
+.menu .navbar .navbar__logo a {
     color: white;
     margin-left: 15px;
     font-size: 20px;
     font-weight: 750;
     font-family: sans-serif;
+    text-decoration: none;
+}
+
+.menu .navbar .navbar__logo a:hover {
+    color:#F7C04A;
 }
 
 .menu .navbar .navbar__links {
@@ -147,26 +152,36 @@ header {
 /* phần main */
 
 .content {
-    margin-top: 10%;
-    margin-left: 32%;
+    display: plex;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+    padding: 50px;
     width: 100%;
 }
 
-.content .main h1 {
+.content h1 {
     color: #F7C04A; 
     font-weight: 700;
     font-size: 120px;
+    text-align: center;
+    margin: 0 auto;
 }
 
-.content .intro p {
+.content p {
     color: white;
-    margin-left: 135px;
+    text-align: center;
     font-size: 30px;
     font-weight:400;
     font-family: sans-serif;
 }
 
-.content .call button {
+.content .Button {
+    margin-top: 10%;
+    text-align: center;
+}
+
+.content .Button button {
     color: white;
     border: none;
     background: #F7C04A;
@@ -178,13 +193,9 @@ header {
     padding-right: 2.5rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    margin-left: 120px;
-    margin-top: 150px;
     cursor: pointer;
 }
 
-.content .call button:hover {
+.content .Button button:hover {
     color:green;
 }
-
-
